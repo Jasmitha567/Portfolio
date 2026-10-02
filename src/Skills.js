@@ -13,7 +13,8 @@ function Skills() {
     "SQLite",
     "Git",
     "GitHub",
-    "VS Code"
+    "VS Code",
+    "LaTeX"
   ];
 
   return (
@@ -50,6 +51,14 @@ function Skills() {
           <p>
             API Integration, Web Services, MVC, DOM, JSON and
             Responsive Design
+          </p>
+        </div>
+
+        <div>
+          <h3>Consulting & Delivery</h3>
+          <p>
+            Requirements Analysis, Solution Design, Stakeholder
+            Communication, Project Planning and SDLC
           </p>
         </div>
 

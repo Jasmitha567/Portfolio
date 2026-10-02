@@ -21,6 +21,10 @@ function Hero() {
           Explore my portfolio
         </a>
 
+        <a href="/Jasmitha_Potluri_Resume.pdf" className="hero-button hero-button-alt" target="_blank" rel="noopener noreferrer">
+          View Resume
+        </a>
+
       </div>
 
     </section>

@@ -62,6 +62,25 @@ function About() {
 
       </div>
 
+      <div className="education-card">
+        <h3>Education</h3>
+        <div className="education-item">
+          <h4>G. Narayanamma Institute of Technology and Science, Hyderabad</h4>
+          <p>B.Tech in Computer Science and Engineering</p>
+          <span>2024 – 2028 · CGPA: 8.04/10</span>
+        </div>
+        <div className="education-item">
+          <h4>Bharatiya Vidya Bhavan's Public School, Hyderabad</h4>
+          <p>Higher Secondary Education, CBSE</p>
+          <span>2022 – 2024</span>
+        </div>
+        <div className="education-item">
+          <h4>Bharatiya Vidya Bhavan's Public School, Hyderabad</h4>
+          <p>Secondary Education, CBSE</p>
+          <span>2010 – 2022</span>
+        </div>
+      </div>
+
       <div className="goal-card">
 
         <p>MY APPROACH</p>

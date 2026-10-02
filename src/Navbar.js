@@ -1,9 +1,8 @@
-import instagram from './assets/instagram.jpg';
+// import instagram from './assets/instagram.jpg';
 import linkedin from './assets/linkedin.png';
 import github from './assets/github.png';
-import pinterest from './assets/pinterest.png';
-//hey ai, whats the error?
-//The error is that the image files are not being imported correctly. The file paths for the images should be relative to the current file, so you need to make sure that the paths are correct. For example, if the images are in a folder called "assets" in the same directory as this file, you should use './assets/instagram.jpg' instead of 'instagram.jpg'.
+// import pinterest from './assets/pinterest.png';
+
 
 
 function Navbar() {
@@ -40,12 +39,12 @@ function Navbar() {
 
       <div className="social-links">
 
-        <a href="https://www.instagram.com/jasmi_5607" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://www.instagram.com/jasmi_5607" target="_blank" rel="noopener noreferrer">
             <img src={instagram}
             alt="Instagram"
             className="social-icon"
           />
-        </a>
+        </a> */}
         
         <a href ="https://www.linkedin.com/in/jasmitha567/" target="_blank" rel="noopener noreferrer">
           <img src={linkedin}
@@ -54,19 +53,19 @@ function Navbar() {
           />
         </a>
 
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Jasmitha567" target="_blank" rel="noopener noreferrer">
           <img src={github} 
             alt="GitHub"
             className="social-icon"
           />
         </a>
 
-        <a href="https://in.pinterest.com/" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://in.pinterest.com/" target="_blank" rel="noopener noreferrer">
           <img src={pinterest}
             alt="Pinterest"
             className="social-icon"
           />
-        </a>
+        </a> */}
 
       </div>
 

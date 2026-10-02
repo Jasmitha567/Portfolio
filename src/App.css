@@ -692,3 +692,55 @@
   object-fit: cover;
   display: block;
 }
+/* ===== polish & animations ===== */
+body { color: #222; background: #fff; }
+.navbar { background: rgba(255,255,255,.85); backdrop-filter: blur(10px); box-shadow: 0 1px 12px rgba(0,0,0,.06); }
+.logo { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; background: #222; color: #fff; font-size: 22px; transition: transform .4s; }
+.logo:hover { transform: rotate(360deg); }
+.nav-links a { position: relative; transition: color .2s; }
+.nav-links a::after { content: ""; position: absolute; left: 0; bottom: -4px; width: 0; height: 2px; background: #d26e82; transition: width .25s; }
+.nav-links a:hover::after { width: 100%; }
+.social-icon { transition: transform .25s; }
+.social-links a:hover .social-icon { transform: translateY(-3px) scale(1.1); }
+
+.hero { background-size: 300% 300%; animation: gradientShift 14s ease infinite; }
+.hero-content > * { opacity: 0; animation: fadeUp .8s ease forwards; }
+.hero-content > :nth-child(2) { animation-delay: .15s; }
+.hero-content > :nth-child(3) { animation-delay: .3s; }
+.hero-content > :nth-child(4) { animation-delay: .45s; }
+.hero-content > :nth-child(5) { animation-delay: .6s; }
+.hero h1 { letter-spacing: -2px; }
+.hero-role { margin: 0 0 20px; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: #555; }
+.hero-button { box-shadow: 0 8px 20px rgba(0,0,0,.18); transition: transform .2s, box-shadow .2s; }
+.hero-button:hover { box-shadow: 0 12px 26px rgba(0,0,0,.25); }
+
+.section-heading h2 { position: relative; display: inline-block; }
+.section-heading h2::after { content: ""; display: block; width: 50px; height: 4px; margin: 12px auto 0; border-radius: 4px; background: linear-gradient(90deg, #f4b6c2, #fff0a8, #a8d8ea); }
+
+.education-card { margin-top: 60px; box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+.skill-card, .project-card, .responsibility-item, .achievement-item, .skill-details div, .education-card { transition: transform .3s, box-shadow .3s, background-color .3s, border-color .3s; }
+.skill-card:hover, .project-card:hover, .responsibility-item:hover, .achievement-item:hover { transform: translateY(-6px); box-shadow: 0 14px 30px rgba(0,0,0,.1); }
+.skill-card:hover { color: #fff; }
+.project-card, .responsibility-item, .achievement-item { border: 1px solid #f0ede6; border-left: 4px solid #f4b6c2; }
+.project-card:hover, .responsibility-item:hover, .achievement-item:hover { border-left-color: #d26e82; }
+.about-image img { transition: transform .6s; }
+.about-image:hover img { transform: scale(1.05); }
+.goal-card { background-size: 200% 200%; animation: gradientShift 10s ease infinite; }
+.query-form input:focus, .query-form textarea:focus { border-color: #d26e82; box-shadow: 0 0 0 3px rgba(210,110,130,.18); }
+.query-form input, .query-form textarea { transition: border-color .2s, box-shadow .2s; }
+.query-form button:hover { box-shadow: 0 8px 18px rgba(0,0,0,.2); background-color: #d26e82; }
+.form-success, .form-error { animation: fadeUp .5s ease; }
+.footer-links a { transition: color .2s, transform .2s; display: inline-block; }
+.footer-links a:hover { transform: translateY(-2px); }
+
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .7s ease, transform .7s ease; }
+.reveal.in-view { opacity: 1; transform: none; }
+.reveal.in-view.skill-card:hover, .reveal.in-view.project-card:hover, .reveal.in-view.responsibility-item:hover, .reveal.in-view.achievement-item:hover { transform: translateY(-6px); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes gradientShift { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .reveal, .hero-content > * { opacity: 1; transform: none; } }
+
+.hero-button-alt { margin-left: 12px; background: transparent; color: #222; border: 2px solid #222; padding: 12px 26px; box-shadow: none; }
+.hero-button-alt:hover { background: #222; color: #fff; }
+@media (max-width: 600px) { .hero-button-alt { margin: 12px 0 0; } }

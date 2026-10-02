@@ -22,16 +22,15 @@ function Achievements() {
           </h4>
 
           <p>
-            Engineered a SQLite web application with multi-format resume
-            ingestion, mapping skills across 8+ job roles and reducing
-            skill-gap assessment from approximately 4 hours to under
-            30 seconds.
+            Reduced skill-gap assessment from ~4 hours to under 30 seconds
+            by engineering a SQLite web application with multi-format resume
+            ingestion that maps skills across 8+ job roles.
           </p>
 
           <p>
-            Integrated the Groq API to generate personalized learning
-            recommendations by aligning candidate capabilities with
-            target-role requirements.
+            Defined requirements for 5 technical roles by analyzing 15 resumes
+            and ~320 job postings, and delivered personalized learning paths
+            by integrating the Groq API using REST-based API integration.
           </p>
 
         </div>
@@ -46,14 +45,13 @@ function Achievements() {
           </h3>
 
           <p>
-            Developed a digital crowd-management prototype integrating
-            real-time monitoring and virtual queues to streamline visitor
-            movement and mitigate congestion.
+            Reduced congestion and streamlined visitor flow by developing a
+            prototype with real-time monitoring and virtual queues.
           </p>
 
           <p>
-            Mapped journeys for 1,000+ visitors and designed modular
-            interfaces within a 6-member team.
+            Structured workflows for 1,000+ visitors by mapping journeys and
+            designing modular interfaces with a 6-member team.
           </p>
 
         </div>
@@ -71,8 +69,9 @@ function Achievements() {
         <div className="responsibility-item">
           <h3>Class Representative</h3>
           <p>
-            Represented the class in academic and administrative matters,
-            coordinating communication between students and faculty.
+            Aligned students and faculty on academic and administrative
+            matters, kept schedules on track and resolved student concerns
+            through timely academic updates.
           </p>
         </div>
 
@@ -81,24 +80,25 @@ function Achievements() {
             Student Coordinator — Philanto Photography Club & Creovate UI/UX Club
           </h3>
           <p>
-            Coordinated club activities, workshops and student participation
-            while supporting event planning and execution.
+            Drove student participation in workshops and events, delivering
+            creative and technical initiatives across two clubs.
           </p>
         </div>
 
         <div className="responsibility-item">
           <h3>Publicity Co-Chair — EOH, Women-Led NGO</h3>
           <p>
-            Spearheaded publicity for food, clothing and community outreach
-            initiatives through NGO collaborations.
+            Grew awareness of food, clothing and community outreach drives,
+            and created meaningful experiences for autistic children and
+            old age home residents.
           </p>
         </div>
 
         <div className="responsibility-item">
           <h3>Joint Secretary — Environmental Club</h3>
           <p>
-            Supported the planning and execution of environmental awareness
-            initiatives and student activities.
+            Delivered environmental awareness initiatives and increased
+            student participation by coordinating event logistics.
           </p>
         </div>
 
